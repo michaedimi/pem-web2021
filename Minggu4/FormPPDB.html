@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrasi PPDB Jalur Donasi 2020/2021</title>
+</heads>
+<body>
+    
+       <fieldset>
+       <legend>FORMULIR PPDB JALUR ZONASI 2020</legend>
+    <h3>Info Pendaftaran</h3>
+       <p>
+            <label>NISN: </label>
+            <input type="text" name="nama" placeholder="..." />
+       </p>
+       <p>
+            <label>Asal Sekolah: </label>
+            <input type="text" name="username" placeholder="..." />
+       </p>
+        <p>
+            <label>Tahun Lulus:</label>
+            <input type="number" name="year" min=2018 max=2020 placeholder="..." />
+
+            <p>
+                <label><i>(Lampirkan fotocopy ijazah)</i></label>
+                   <form action="proses.php" method="post" enctype="multipart/form-data">
+                       <p>Upload <input type='file' name='foto' /></p>
+                   </form>
+               </p>
+       </p>
+    <h3>Data Calon Peserta</h3>   
+            <label>Nama:</label>
+            <input type="password" name=" password" placeholder="..." />
+       </p>
+        <p>
+            <label>NIK:</label>
+            <input type="email" name="email" placeholder="..." />
+       </p>
+        <p>
+            <label>Tempat Lahir</label>
+            <input type="email" name="email" placeholder="..." />
+            <p>
+                <label>Tanggal Lahir:</labels>
+                <input type="date"name="tanggaL"/>
+       </p>
+        <p>
+                <label>Fotocopy Akta Kelahiran Yang Telah Dilegalisir <i>(Di Lampirkan)</i></label>
+                <form action="proses.php" method="post" enctype="multipart/form-data">
+                <p>Upload <input type='file' name='foto' /></p>
+                </form>
+       </p>
+            <p>
+            <label>Alamat:</label>
+            <p>
+            <label>Desa/Kel.:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Kecamatan:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Kabupaten:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Provinsi:</label>
+            <input type="email" name="email" placeholder="..." />
+       </p>
+        <p>
+            <label>Email Aktif</label>
+            <input type="email" name="email" placeholder="..." />
+        </p>
+    <h3>Data Orang Tua</h3>
+            <p>
+             <label><i>(Lampirkan KK)</i></label>
+                <form action="proses.php" method="post" enctype="multipart/form-data">
+                    <p>Upload <input type='file' name='foto' /></p>
+                </form>
+            </p>
+            <p>
+            <label>Nomor Kartu Keluarga</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Nama Ayah Kandung:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+            </p>
+            <p>
+            <label>Pekerjaan:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Nama Ibu Kandung:</label>
+            <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+            <label>Agama:</label>
+            <select name="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+            </select>
+            </p>
+            <p>
+                <label>Pekerjaan:</label>
+                <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+                <label>Alamat:</label>
+                <p>
+                <label>Desa/Kel.:</label>
+                <input type="email" name="email" placeholder="..." />
+           </p>
+            <p>
+                <label>Kecamatan:</label>
+                <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>
+                <label>Kabupaten:</label>
+                <input type="email" name="email" placeholder="..." />
+           </p>
+            <p>
+                <label>Provinsi:</label>
+                <input type="email" name="email" placeholder="..." />
+            </p>
+            <p>Apakah anda sudah yakin bahwa data diatas dibuat dengan sebenar-benarnya ?</p>
+
+<label for="myCheck">Yakin:</label> 
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Silahkan Kirim</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
+
+         </fieldset>
+
+         <input type='submit' name='tombol' value='Kirim' />
+    </form>
+</body>
+</html>
